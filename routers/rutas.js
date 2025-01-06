@@ -20,6 +20,13 @@ router.get("/about", (req, res) => {
   });
 });
 
+
+router.get("/main", (req, res) => {
+  res.status(200).json({
+    message: "Welcome... A root main!"
+  });
+});
+
 /**
  * Manejo de rutas no encontradas (404).
  * Esta ruta se asegura de que cualquier ruta no definida devuelva un error 404.
